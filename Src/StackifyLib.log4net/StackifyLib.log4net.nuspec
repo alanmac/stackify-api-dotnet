@@ -12,7 +12,7 @@
     <copyright>Copyright 2016</copyright>
   </metadata>
    <files>
-	<file src="bin\$configuration$\StackifyLib.dll" target="lib\net40\" />
-	<file src="bin\$configuration$\StackifyLib.log4net.dll" target="lib\net40\" />
+	<file src="..\..\Dlls\StackifyLib\StackifyLib.dll" target="lib\net40\" />
+	<file src="..\..\Dlls\StackifyLib.log4net\StackifyLib.log4net.dll" target="lib\net40\" />
   </files>
 </package>
