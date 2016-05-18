@@ -14,6 +14,7 @@ if "%nuget%" == "" (
 	set nuget=nuget
 )
 
+%WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild src\StackifyLib\StackifyLib.csproj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 %WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild src\StackifyLib.log4net\StackifyLib.log4net.csproj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 
 mkdir Build
