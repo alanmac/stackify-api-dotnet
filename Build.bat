@@ -14,10 +14,10 @@ if "%nuget%" == "" (
 	set nuget=nuget
 )
 
-REM %WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild src\StackifyLib.log4net\StackifyLib.log4net.csproj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
+%WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild src\StackifyLib.log4net\StackifyLib.log4net.csproj /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 
-REM mkdir Build
-REM mkdir Build\lib
-REM mkdir Build\lib\net40
+mkdir Build
+mkdir Build\lib
+mkdir Build\lib\net40
 
 %nuget% pack "Src\StackifyLib.log4net\StackifyLib.log4net.csproj" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
