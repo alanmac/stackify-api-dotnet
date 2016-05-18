@@ -20,4 +20,4 @@ mkdir Build
 mkdir Build\lib
 mkdir Build\lib\net40
 
-%nuget% pack "src\StackifyLib.log4net\StackifyLib.log4net.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
+%nuget% pack "src\StackifyLib.log4net\StackifyLib.log4net.csproj" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
